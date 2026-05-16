@@ -1,4 +1,4 @@
-name: Triggers
+name: Inputs demo
 on:
   workflow_dispatch:
     inputs:
