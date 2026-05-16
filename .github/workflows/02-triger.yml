@@ -1,8 +1,7 @@
 name: Triggers
 on:
   pull_request:
-    types:
-      - opened
+    types: [opened, reopened]
     branches:
       - 'releases/**'
   # push:
