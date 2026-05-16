@@ -1,11 +1,16 @@
 name: Triggers
-on: workflow_dispatch
+on:
+  push:
+    branches:
+      - 'feature*'
  # Runs every time you push code to the repository
 
 jobs:
   # job name
-  say-hello:
+  trigger:
     runs-on: ubuntu-latest  # The type of machine to run the job on
     steps:
-      - name: Manual dispatch
-        run: echo "manually dispatched"
+      # - name: Manual dispatch
+      #   run: echo "manually dispatched"
+      - name: feature branch push
+        run: echo "feature branch push"
