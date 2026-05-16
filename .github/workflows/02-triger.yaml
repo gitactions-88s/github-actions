@@ -1,0 +1,11 @@
+name: Triggers
+on: workflow_dispatch
+ # Runs every time you push code to the repository
+
+jobs:
+  # job name
+  say-hello:
+    runs-on: ubuntu-latest  # The type of machine to run the job on
+    steps:
+      - name: Manual dispatch
+        run: echo "manually dispatched"
