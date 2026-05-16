@@ -3,7 +3,8 @@ on:
   push:
     branches:
       - 'main'
- # Runs every time you push code to the repository
+  # workflow_dispatch
+  # [push] # Tiggers the workflow on every push to the repository
 
 jobs:
   # job name
