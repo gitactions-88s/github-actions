@@ -2,7 +2,7 @@ name: Triggers
 on:
   push:
     branches:
-      - 'feature*'
+      - 'main'
  # Runs every time you push code to the repository
 
 jobs:
