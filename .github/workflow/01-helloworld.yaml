@@ -7,4 +7,4 @@ jobs:
     runs-on: ubuntu-latest  # The type of machine to run the job on
     steps:
       - name: Greet the world
-        run: echo "Hello, World!"
+        run: echo "Hello, World"
