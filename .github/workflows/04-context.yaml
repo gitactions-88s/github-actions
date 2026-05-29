@@ -9,6 +9,9 @@ jobs:
   # job name
   github-context:
     runs-on: ubuntu-latest  # The type of machine to run the job on
+    outputs:
+      image-name: ${{ steps.tag.outputs.image-name }}
+      image-version: ${{ steps.tag.outputs.version }}
     steps:
       - name: print info
         run: |
@@ -50,3 +53,12 @@ jobs:
         run: |
           echo "Course: $Course"
           echo "Duration: $Duration"
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: github-context
+    steps:
+      - name: print github env in another job
+        run: |
+          echo "Image Name: ${{ needs.github-context.outputs.image-name }}"
+          echo "Image Version: ${{ needs.github-context.outputs.image-version }}"
