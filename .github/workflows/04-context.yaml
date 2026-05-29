@@ -38,5 +38,5 @@ jobs:
       
       - name: print previous step output 
         run: |
-          echo "Image name: ${{ steps.tag.outputs.image }}"
+          echo "Image name: ${{ steps.tag.outputs.image-name }}"
           echo "Version: ${{ steps.tag.outputs.version }}"
