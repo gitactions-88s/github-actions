@@ -44,7 +44,7 @@ jobs:
       - name: github env
         run: |
           echo "Course=github-actions" >> $GITHUB_ENV
-          echo "Duration=$hours" >> $GITHUB_ENV
+          echo "Duration=5hours" >> $GITHUB_ENV
       
       - name: print github env
         run: |
