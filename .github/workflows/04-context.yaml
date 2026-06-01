@@ -68,3 +68,6 @@ jobs:
     steps:
     - name: run sonar scan
       run: echo "Sonar Scan"
+
+    - name: print job Contexts
+      run: "${{ toJson(github) }}"
