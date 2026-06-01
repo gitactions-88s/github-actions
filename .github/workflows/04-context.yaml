@@ -70,4 +70,4 @@ jobs:
       run: echo "Sonar Scan"
 
     - name: print job Contexts
-      run: "${{ toJson(github) }}"
+      run: echo "${{ toJson(github) }}"
