@@ -3,7 +3,7 @@ on: [push]  # Runs every time you push code to the repository
 jobs:
   # job name
   feature-pipeline:
-    uses: gitactions-88s/workflows/.github/workflows/nodejs-feature-pipeline.yaml@main
+    uses: workflows/.github/workflows/nodejs-feature-pipeline.yaml@main
     with:
       project: 'roboshop'
       component: 'catalogue'
